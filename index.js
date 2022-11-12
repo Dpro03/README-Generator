@@ -5,7 +5,7 @@ const util = require("util");
 
 const generateMarkdown = require("./utils/generateMarkdown");
 
-const generateHTML = ({ name, location, github, linkedin }) =>
+/*const generateHTML = ({ name, location, github, linkedin }) =>
   `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +27,7 @@ const generateHTML = ({ name, location, github, linkedin }) =>
   </div>
 </div>
 </body>
-</html>`;
+</html>`;*/
 
 
 // TODO: Create an array of questions for user input
@@ -60,23 +60,23 @@ const questions = [
   {
     type: "input",
     message: "What is the usage of your project?",
-    name: "Usage",
+    name: "usage",
   },
   {
     type: "list",
     message: "What is the license of your project?",
-    name: "License",
+    name: "license",
     choices: ["MIT", "Apache", "GPL", "None"],
   },
   {
     type: "input",
     message: "How can the user contribute to your project?",
-    name: "Contributing",
+    name: "contributing",
   },
   {
     type: "input",
     message: "How can the user test your project?",
-    name: "Tests",
+    name: "tests",
   },
 ];
 // TODO: Create a function to write README file
